@@ -3,42 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramadan Countdown 🌙</title>
+  <title>Layali Ramadan 🌙</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Stars canvas -->
-  <canvas id="stars"></canvas>
+  <!-- Stars background -->
+    <canvas id="stars"></canvas>
 
-  <!-- Countdown content -->
-  <main class="countdown-container">
-    <h1>Ramadan Begins In</h1>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <img src="MyLogo.png" alt="Logo" class="logo" style="width: 5cm;">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="countdown.html">Countdown</a></li>
 
-    <div class="countdown">
-      <div class="time-box">
-        <span id="days">0</span>
-        <small>Days</small>
-      </div>
-      <div class="time-box">
-        <span id="hours">0</span>
-        <small>Hours</small>
-      </div>
-      <div class="time-box">
-        <span id="minutes">0</span>
-        <small>Minutes</small>
-      </div>
-      <div class="time-box">
-        <span id="seconds">0</span>
-        <small>Seconds</small>
-      </div>
-    </div>
+    </ul>
+  </nav>
 
-    <p class="duaa">اللهم بلغنا رمضان 🤍 <br>Website will be published soon when ramadan starts Insha'Allah.
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="moon"></div>
+
+    <h2>Ramadan Nights, Reimagined</h2>
+    <p>
+      A cozy hub for Ramadan series, calm games, and peaceful night vibes.
     </p>
+
+    <div class="buttons">
+      <a href="series.html" class="btn">Explore Series</a>
+      <a href="games.html" class="btn secondary">Play Games</a>
+    </div>
   </main>
 
-  <script src="script.js"></script>
-  <script src="countdown.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Layali Ramadan </p>
+  </footer>
+<script src="script.js"></script>
 </body>
 </html>
