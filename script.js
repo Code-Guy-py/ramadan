@@ -1,3 +1,13 @@
+// 🔒 Block site access before Ramadan
+const ramadanDate = new Date("2026-02-16T00:00:00");
+
+if (window.location.pathname.endsWith("index.html")) {
+  const now = new Date();
+  if (now < ramadanDate) {
+    window.location.href = "countdown.html";
+  }
+}
+
 const canvas = document.getElementById("stars");
 const ctx = canvas.getContext("2d");
 
